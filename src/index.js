@@ -1,12 +1,16 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
+
 import reportWebVitals from './reportWebVitals';
+import store from "./TaskStore";
+import TaskList from "./TaskList";
+
+
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <TaskList store={store} />
   </React.StrictMode>,
   document.getElementById('root')
 );
